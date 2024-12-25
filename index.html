@@ -1,78 +1,233 @@
+<!-- 宣告網頁為HTML5文件 -->
 <!doctype html>
-<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
-<!--[if IE 7 ]>    <html lang="en" class="ie7"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
-<head>
-<meta name="viewport" content="width = 1600, user-scalable = no" />
-<script type="text/javascript" src="./js/jquery.min.1.7.js"></script>
-<script type="text/javascript" src="./js/modernizr.2.5.3.min.js"></script>
-</head>
-<body>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 品牌名稱 -->
+    <meta name="author" content="繽紛時光">
+    <!-- 濃縮網頁文字內容，會顯示在SERP頁面 -->
+    <meta name="description" content="繽紛時光公關公司,活動策劃,親子活動,企業年會策劃,品牌推廣,創意婚禮設計,產品發佈會策劃,戶外團建活動專家,家庭,社區,策劃顧問,創意活動規劃推薦">
+    <!-- 網頁編輯器 -->
+    <meta name="generator" content="Visual Studio Code">
+    <!-- 網頁文字內容重要關鍵字，但Google已排除權重 -->
+    <meta name="keywords" content="繽紛時光公關公司，親子活動,活動,策畫,規劃,戶外活動,家庭,婚禮,年會,公關公司">
+    <!-- favicom我的最愛(書籤)圖標 -->
 
-<div class="flipbook-viewport">
-	<div class="container">
-		<div class="flipbook">
-			<div style="background-image:url(pages/1.jpg)"></div>
-			<div style="background-image:url(pages/2.jpg)"></div>
-			<div style="background-image:url(pages/3.jpg)"></div>
-			<div style="background-image:url(pages/4.jpg)"></div>
-			<div style="background-image:url(pages/5.jpg)"></div>
-			<div style="background-image:url(pages/5l.jpg)"></div>
-			<div style="background-image:url(pages/5r.jpg)"></div>
-			<div style="background-image:url(pages/7.jpg)"></div>
-			<div style="background-image:url(pages/8.jpg)"></div>
-			<div style="background-image:url(pages/9.jpg)"></div>
-			<div style="background-image:url(pages/10.jpg)"></div>
-			<div style="background-image:url(pages/11.jpg)"></div>
-			<div style="background-image:url(pages/12.jpg)"></div>
-		</div>
-	</div>
-</div>
+    <title>繽紛時光-首頁</title>
+    <!-- BootstrapCss外觀 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
+  </head>
+  <!-- 註冊GA才有追蹤碼，GA會有版本更新的問題，上傳網頁後才可以申請 -->
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R78SR3327F"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-
-<script type="text/javascript">
-
-function loadApp() {
-
-	// Create the flipbook
-
-	$('.flipbook').turn({
-			// Width
-
-			width:1600,
-			
-			// Height
-
-			height:600,
-
-			// Elevation
-
-			elevation: 50,
-			
-			// Enable gradients
-
-			gradients: true,
-			
-			// Auto center this flipbook
-
-			autoCenter: true
-
-	});
-}
-
-// Load the HTML4 version if there's not CSS transform
-
-yepnope({
-	test : Modernizr.csstransforms,
-	yep: ['./js/turn.js'],
-	nope: ['./js/turn.html4.min.js'],
-	both: ['css/basic.css'],
-	complete: loadApp
-});
-
+  gtag('config', 'G-R78SR3327F');
 </script>
-
-</body>
+  <body>
+    <header>
+     <!-- 導覽列    -->
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">繽紛時光</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">首頁 </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">關於我們</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="services.html">服務內容</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">活動案例</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="news.html">最新消息</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://toolkit.url.com.tw/bbs/index.php?email=bbs@vita.url.tw"  
+                      target="_blank">留言給我</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+        </div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/index/AnyConv.com__a001.webp" class="d-block w-100" alt="繽紛時光公司外觀" title="繽紛時光公司外觀" aria-label="繽紛時光公司外觀">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>繽紛時光~公關公司</h3>
+                <p>想要留下美好回憶嗎!找我們就對了!</p>
+              </div>
+            </div>
+        
+            <div class="carousel-item">
+              <img src="images/index/AnyConv.com__a002.webp" class="d-block w-100" alt="紛時光公司繽團隊" title="紛時光公司繽團隊" aria-label="紛時光公司繽團隊">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>繽紛時光~公關公司</h3>
+                <p>想要留下美好回憶嗎!找我們就對了!</p>
+              </div>
+            </div>
+        
+            <div class="carousel-item">
+              <img src="images/index/AnyConv.com__a003.webp" class="d-block w-100" alt="繽紛時光公司會議室" title="繽紛時光公司會議室" aria-label="繽紛時光公司會議室">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>繽紛時光~公關公司</h3>
+                <p>想要留下美好回憶嗎!找我們就對了!</p>
+              </div>
+            </div>
+        
+            <div class="carousel-item">
+              <img src="images/index/AnyConv.com__a004.webp" class="d-block w-100" alt="繽紛時光團隊加油打氣" title="繽紛時光團隊加油打氣" aria-label="繽紛時光團隊加油打氣">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>「精彩瞬間，繽紛時光」</h3>
+                <p>想要留下美好回憶嗎!找我們就對了!</p>
+              </div>
+            </div>
+        
+            <div class="carousel-item">
+              <img src="images/index/AnyConv.com__ae005.webp" class="d-block w-100" alt="近期活動聖誕交換禮物" title="近期活動聖誕交換禮物" aria-label="近期活動聖誕交換禮物">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>繽紛時光~公關公司</h3>
+                <p>最新活動消息~活動日期12/23</p>
+              </div>
+            </div>
+        
+            <div class="carousel-item">
+              <img src="images/index/AnyConv.com__ad006.webp" class="d-block w-100" alt="近期小小職人烘培" title="近期小小職人烘培" aria-label="近期小小職人烘培">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>繽紛時光~公關公司</h3>
+                <p>活動案例~已截止</p>
+              </div>
+            </div>
+        
+            <div class="carousel-item">
+              <img src="images/index/AnyConv.com__ac007.webp" class="d-block w-100" alt="近期親子泡泡樂" title="近期親子泡泡樂" aria-label="近期親子泡泡樂">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>繽紛時光~公關公司</h3>
+                <p>活動案例~已截止</p>
+              </div>
+            </div>
+          </div>
+        
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      <div class="container">
+       <div class="row">
+        <div class="col-lg-4 order-md-0 mt-5">
+          <img src="images/index/AnyConv.com__b001.webp" class="rounded-circle w-100" alt="公司背景"title="公司背景" aria-label="公司背景">
+          <div class="card-boby mt-4">
+            <h2>公司背景 </h2>
+            <p>創立之初便致力於打造一個專業、可靠且極具創意的平台，為客戶帶來無與倫比的活動體驗。我們的團隊由一群才華橫溢且富有經驗的活動策劃專家組成，涵蓋從品牌推廣、產品發布到婚禮、派對與展覽等多元化領域。我們深信，每一場成功的活動都源於對細節的極致繽紛時光是一家充滿創意與熱情的公關與活動策劃公司，專注於為企業與個人提供高品質、獨一無二的活動解決方案。公司把控與對創意的無限追求，因此，我們不僅僅是執行者，更是實現夢想的合作夥伴。在這裡，我們以專業的態度與熱忱，為每一位客戶創造超越期待的時刻，成為業界值得信賴的領導者。</p>
+          </div>
+        </div>
+        <div class="col-lg-4 order-md-1 mt-5">
+          <img src="images/index/AnyConv.com__b002.webp" class="rounded-circle w-100" alt="公司理念"title="公司理念" aria-label="公司理念">
+          <div class="card-boby mt-4">
+            <h2>公司理念</h2>
+            <p>在繽紛時光，我們堅持以「創造繽紛，刻畫時光」為核心理念，致力於將每一場活動化為客戶心中永恆的美好回憶。我們相信，每一個活動都是情感與創意的完美結合，是品牌故事的傳遞與參與者心靈的共鳴。因此，我們始終以客戶為中心，深入了解需求，融合市場趨勢與創意設計，打造別具一格的活動體驗。我們的目標是讓每場活動都成為閃耀的舞台，無論規模大小，都能展現出專業與熱情。我們追求的是超越期望的感動，並用細節詮釋每個故事，用創新點燃每個精彩瞬間。</p>
+          </div>
+        </div>
+        <div class="col-lg-4 order-md-2 mt-5">
+          <img src="images/index/AnyConv.com__b003.webp" class="rounded-circle w-100" alt="公司簡介"title="公司簡介" aria-label="公司簡介">
+          <div class="card-boby mt-4">
+            <h2>公司簡介</h2>
+            <p>繽紛時光專注於為客戶提供全方位的活動策劃與執行服務。我們的服務範圍涵蓋企業品牌推廣活動、年會策劃、大型展覽活動，以及私人訂製的婚禮、派對等。我們深信，每場活動都應該是與眾不同的創意結晶，並且能夠觸動人心。在策劃過程中，我們將客戶的需求放在首位，並結合市場洞察力與專業執行力，從概念設計到細節實施，提供一站式解決方案。透過對活動的獨特理解與專業洞察，我們成功為眾多客戶創造了難忘的精彩瞬間。我們不僅僅是活動的執行者，更是夢想的實現者，為每一位客戶帶來專屬於他們的「繽紛時光」。</p>
+          </div>
+        </div>
+       </div>  
+       <hr>
+<div class="row my-5">
+    <!-- 公司口號區塊 -->
+    <div class="col-md-7 order-md-1">
+        <h2>公司口號~</h2>
+        <h3>「創意無限時光永恆」</h3>
+        <h3>「讓每個瞬間都閃耀」</h3>
+        <h3>「精彩瞬間，繽紛時光」</h3>
+    </div>
+    <!-- 圖片區塊 -->
+    <div class="col-md-3 order-md-0">  
+        <img src="images/index/AnyConv.com__b005.webp" class="img-fluid mx-auto" alt="公司口號" title="公司口號">  
+    </div>
+</div>
+<hr>
+<div class="row my-5">
+    <!-- 公司口號區塊 -->
+    <div class="col-md-7 order-md-0">
+        <h2>成功案例</h2>
+        <p>親子創意工坊——「彩虹手作樂園」</p>
+        <P>在這場親子活動中，繽紛時光精心策劃了一個富有創意與動手樂趣的手作工坊。孩子們和家長一起動手製作彩虹色的陶藝、手繪布袋、創意拼貼等藝術品。活動現場設有多個創意攤位，並安排了專業的藝術老師指導孩子們發揮創意，同時家長也能與孩子們一起參與互動，增進親子關係。活動結束後，每位參加者都能帶著自己親手創作的作品回家，帶回滿滿的成就感與快樂回憶。</P>
+        <h3>「精彩瞬間，繽紛時光」</h3>
+    </div>
+    <!-- 圖片區塊 -->
+    <div class="col-md-3 order-md-1">  
+        <img src="images/index/AnyConv.com__b004.webp" class="img-fluid mx-auto" alt="成功案例-親子創意工坊——「彩虹手作樂園」" title="成功案例-親子創意工坊——「彩虹手作樂園」">  
+    </div>
+</div>
+<hr>
+<div class="row my-5">
+    <!-- 公司口號區塊 -->
+    <div class="col-md-7 order-md-1">
+        <h2>近期結束案例</h2>
+        <p>親子運動會——「跑出幸福，玩轉童年」</p>
+        <P>這場親子運動會，圍繞著健康、活力和協作的主題，讓家長和孩子們一同參加趣味十足的競賽，如親子接力賽、跳繩挑戰、袋鼠跳等。每個比賽項目都設計成既有趣又能促進親子間合作與默契的活動，讓孩子們在遊戲中學習團隊精神與自信，家長也能藉此與孩子共度愉快時光。整場活動氣氛熱烈，並設有豐富的小獎品，鼓勵每個家庭參與並享受運動的樂趣。</P>
+        <h3>「精彩瞬間，繽紛時光」</h3>
+    </div>
+    <!-- 圖片區塊 -->
+    <div class="col-md-3 order-md-0">  
+        <img src="images/index/AnyConv.com__boo6.webp" class="img-fluid mx-auto" alt="成功案例-親子運動會——「跑出幸福，玩轉童年」" title="成功案例-親子運動會——「跑出幸福，玩轉童年」">  
+    </div>
+</div>
+        <footer>
+          <P class="float-end"><a href="#top">回到頁面頂端</a></P>
+          <P>繽紛時光 &copy;2024</P> 
+        </footer>
+    </main>
+        <!-- Bootstrapjs-互動 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
 </html>

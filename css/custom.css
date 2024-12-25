@@ -1,0 +1,29 @@
+:root,
+[data-bs-theme=dark] {
+--bs-dark-rgb: 16, 63, 130;
+}
+
+html {font-size: 20px;}
+
+h2 {font-size: 1.5rem;font-weight: 900;color:rgb(39, 102, 299);}
+
+h3 {font-size: 1.5rem;font-weight: 900;color:rgb(255, 0, 255);}
+
+/* 拿掉頁尾返回頂端下底線 */
+footer a{ text-decoration: none;}
+
+.swiper {
+    width: 100%;
+    height: auto;
+  }
+
+  .text-orange {
+    color:darkorange;
+  }
+
+  .carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+ 
